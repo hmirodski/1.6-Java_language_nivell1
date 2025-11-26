@@ -1,14 +1,11 @@
 package exercici2;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
-
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 
 public class GenericMethodsTest {
+
     @Test
     public void testWithPersonaStringDouble() {
         GenericMethods generic = new GenericMethods();
@@ -21,6 +18,4 @@ public class GenericMethodsTest {
         GenericMethods generic = new GenericMethods();
         assertDoesNotThrow(() -> generic.showGenericMethods("Hola", 25, true));
     }
-
-
 }
