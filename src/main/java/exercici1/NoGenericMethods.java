@@ -2,36 +2,48 @@ package exercici1;
 
 import java.util.Objects;
 
-public class NoGenericMethods {
+public class NoGenericMethods<T> {
 
-    private final Object first;
-    private final Object second;
-    private final Object third;
+    private T first;
+    private T second;
+    private T third;
 
-    public NoGenericMethods(Object first, Object second, Object third) {
+    public NoGenericMethods(T first, T second, T third) {
         this.first = Objects.requireNonNull(first);
         this.second = Objects.requireNonNull(second);
         this.third = Objects.requireNonNull(third);
     }
 
-    public Object getFirst() {
+    public T getFirst() {
         return first;
     }
 
-    public Object getSecond() {
+    public T getSecond() {
         return second;
     }
 
-    public Object getThird() {
+    public T getThird() {
         return third;
+    }
+
+    public void setFirst(T first) {
+        this.first = Objects.requireNonNull(first);
+    }
+
+    public void setSecond(T second) {
+        this.second = Objects.requireNonNull(second);
+    }
+
+    public void setThird(T third) {
+        this.third = Objects.requireNonNull(third);
     }
 
     @Override
     public String toString() {
         return "NoGenericMethods{" +
-                "arg1=" + first +
-                ", arg2=" + second +
-                ", arg3=" + third +
+                "first=" + first +
+                ", second=" + second +
+                ", third=" + third +
                 '}';
     }
 }
