@@ -2,7 +2,7 @@
 
 ## 📄 Descripción
 
-Este proyecto contiene la implementación de dos ejercicios del Sprint 1.06 - Generics en Java.
+Este proyecto contiene la implementación de dos ejercicios del Sprint 1. - tasca 06 Generics en Java.
 
 ### Ejercicio 1: NoGenericMethods
 
